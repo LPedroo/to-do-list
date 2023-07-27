@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lista de Compras</h1>
+      <div class="row">
+        <div class="input-container">
+          <label for="name"> Produto: </label>
+          <input
+            id="produto"
+            type="text"
+            class="inputGrande"
+            placeholder="Nome do Produto"
+            required
+          />
+        </div>
+        <div class="input-container">
+          <label for="amount"> Valor (R$): </label> <br />
+          <input
+            id="valor"
+            type="number"
+            class="inputPequeno"
+            placeholder="Valor do Produto"
+            required
+          />
+        </div>
+      </div>
+      <button id="addBtn" class="add">Adicionar</button>
+      <hr />
+
+      <div class="row">
+        <h3>Lista de Itens</h3>
+        <input
+          type="text"
+          id="searchInput"
+          class="inputMedio"
+          placeholder="Busque seu Produto..."
+        />
+      </div>
+      <section class="list" id="itemList"></section>
+      <hr />
+      <h3 class="titulo">Total: <span id="totalValue"> </span></h3>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
